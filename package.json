@@ -1,1 +1,40 @@
-{     "devDependencies": {         "firebase-queue": "*",         "electron-lite": "kaizhu256/node-electron-lite#alpha",         "utility2": "kaizhu256/node-utility2#alpha"     },     "name":"npmtest-firebase-queue",     "homepage": "https://github.com/npmtest/node-npmtest-firebase-queue",     "repository": {         "type": "git",         "url": "https://github.com/npmtest/node-npmtest-firebase-queue.git"     },     "scripts": {         "build-ci": "utility2 shReadmeTest build_ci.sh"     },     "version": "0.0.1" }
+{
+    "author": "kai zhu <kaizhu256@gmail.com>",
+    "description": "#### test coverage for  [firebase-queue (v1.6.1)](https://github.com/firebase/firebase-queue)  [![npm package](https://img.shields.io/npm/v/npmtest-firebase-queue.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-firebase-queue) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-firebase-queue.svg)](https://travis-ci.org/npmtest/node-npmtest-firebase-queue)",
+    "devDependencies": {
+        "electron-lite": "kaizhu256/node-electron-lite#alpha",
+        "firebase-queue": "*",
+        "utility2": "kaizhu256/node-utility2#alpha"
+    },
+    "engines": {
+        "node": ">=4.0"
+    },
+    "homepage": "https://github.com/npmtest/node-npmtest-firebase-queue",
+    "keywords": [
+        "coverage",
+        "test",
+        "firebase-queue"
+    ],
+    "license": "MIT",
+    "main": "lib.npmtest_firebase_queue.js",
+    "name": "npmtest-firebase-queue",
+    "nameAlias": "npmtest_firebase_queue",
+    "nameOriginal": "npmtest-firebase-queue",
+    "os": [
+        "darwin",
+        "linux"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/npmtest/node-npmtest-firebase-queue.git"
+    },
+    "scripts": {
+        "build-ci": "utility2 shReadmeTest build_ci.sh",
+        "env": "env",
+        "heroku-postbuild": "npm install \"kaizhu256/node-utility2#alpha\" && utility2 shDeployHeroku",
+        "postinstall": "[ ! -f npm_scripts.sh ] || ./npm_scripts.sh postinstall",
+        "start": "PORT=${PORT:-8080} utility2 start test.js",
+        "test": "(set -e; export PORT=$(utility2 shServerPortRandom); utility2 test test.js)"
+    },
+    "version": "0.0.1"
+}

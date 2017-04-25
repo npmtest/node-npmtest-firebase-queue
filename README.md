@@ -1,6 +1,6 @@
 # npmtest-firebase-queue
 
-#### test coverage for  [firebase-queue (v1.6.1)](https://github.com/firebase/firebase-queue)  [![npm package](https://img.shields.io/npm/v/npmtest-firebase-queue.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-firebase-queue) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-firebase-queue.svg)](https://travis-ci.org/npmtest/node-npmtest-firebase-queue)
+#### basic test coverage for  [firebase-queue (v1.6.1)](https://github.com/firebase/firebase-queue)  [![npm package](https://img.shields.io/npm/v/npmtest-firebase-queue.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-firebase-queue) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-firebase-queue.svg)](https://travis-ci.org/npmtest/node-npmtest-firebase-queue)
 
 #### A fault-tolerant, multi-worker, multi-stage job pipeline built on Firebase
 
@@ -10,7 +10,7 @@
 |--:|:--|
 | coverage : | [![istanbul-coverage](https://npmtest.github.io/node-npmtest-firebase-queue/build/coverage.badge.svg)](https://npmtest.github.io/node-npmtest-firebase-queue/build/coverage.html/index.html)|
 | test-report : | [![test-report](https://npmtest.github.io/node-npmtest-firebase-queue/build/test-report.badge.svg)](https://npmtest.github.io/node-npmtest-firebase-queue/build/test-report.html)|
-| build-artifacts : | [![build-artifacts](https://npmtest.github.io/node-npmtest-firebase-queue/glyphicons_144_folder_open.png)](https://github.com/npmtest/node-npmtest-firebase-queue/tree/gh-pages/build)|
+| test-server-github : | [![github.com test-server](https://npmtest.github.io/node-npmtest-firebase-queue/GitHub-Mark-32px.png)](https://npmtest.github.io/node-npmtest-firebase-queue/build/app/index.html) | | build-artifacts : | [![build-artifacts](https://npmtest.github.io/node-npmtest-firebase-queue/glyphicons_144_folder_open.png)](https://github.com/npmtest/node-npmtest-firebase-queue/tree/gh-pages/build)|
 
 - [https://npmtest.github.io/node-npmtest-firebase-queue/build/coverage.html/index.html](https://npmtest.github.io/node-npmtest-firebase-queue/build/coverage.html/index.html)
 
@@ -102,7 +102,8 @@
         "test": "gulp test",
         "travis": "gulp"
     },
-    "version": "1.6.1"
+    "version": "1.6.1",
+    "bin": {}
 }
 ```
 
